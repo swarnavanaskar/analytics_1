@@ -9,4 +9,4 @@ head(df)
 dtree1 = rpart(buy ~ gender+age, data = df, minsplit=10, cp=0)
 dtree1
 dtree1$variable.importance
-rpart.plot(dtree1)
+rpart.plot(dtree1,cex = .8, nn=T)
